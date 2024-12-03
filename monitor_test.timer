@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for monitor_test.service
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+Unit=monitor_test.service
+
+[Install]
+WantedBy=timers.target
